@@ -1,0 +1,129 @@
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(55, 41, 75), rgb(138, 60, 118));
+}
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+form{
+    background-color: black;
+    height: 450px;
+    width: 1080px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+form *{
+    
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    position: absolute;
+    top:150;
+    margin-left: 20px;
+}
+
+.imgprof{
+    position: absolute;
+    margin-left:40px;
+    top:50;
+}
+
+button{
+    position: absolute;
+    margin-top: 420px;
+    width: 195px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #6D2E53;
+    transition: ease-out 0.3s;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    z-index: 1;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-image: linear-gradient(to right, rgb(55, 41, 75), rgb(185, 50, 151));
+    border-radius: 5px;
+}
+
+button:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+/*table style*/
+  table{
+    position: absolute;
+   left: 300;
+   font-family: 'Roboto Mono';
+   font-size: 15px;
+   box-shadow: 0 0 20px rgba(0,0,0,0.15);
+   color:black;
+  }
+ 
+  table#t1 tr:nth-child(even) {
+    background-color:  rgba(113, 103, 103, 0.918);
+ 
+   
+  }
+  table#t1 tr:nth-child(odd) {
+    background-color: #415b57;
+ 
+  }
+
+  th{
+    background-color: #6D2E53;
+    color: white;
+    padding: 15px;
+  
+  } 
+
+  td{
+    padding: 10px;
+    
+  }
+  
